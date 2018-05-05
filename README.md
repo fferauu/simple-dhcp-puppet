@@ -21,6 +21,6 @@ dhcp::subnet { '192.168.10.0' :
 
 dhcp::host { 'example.com' :
   ip  => '192.168.10.75',
-  mac => 'ab:ab:ab:ab:ab:ab',
+  mac => '11:11:11:11:11:11',
 }
 
