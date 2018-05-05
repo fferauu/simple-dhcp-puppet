@@ -1,0 +1,7 @@
+subnet <%= $subnet %> netmask <%= $netmask %> {
+  range <%= $begin_range %> <%= $end_range %>;
+  option routers <%= $router %>;
+  option broadcast-address <%= $broadcast %>;
+  option domain-name-servers <%= $dns[0] %>, <%= $dns[1] %>; 
+}
+<% %>

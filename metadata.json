@@ -1,0 +1,19 @@
+{
+  "name": "simple-dhcp",
+  "version": "0.1.0",
+  "author": "Michał Kacprzak",
+  "summary": "Simple Puppet module to mantain DHCP",
+  "license": "Apache-2.0",
+  "source": "https://github.com/fferauu/simple-dhcp-puppet",
+  "project_page": "https://github.com/fferauu/simple-dhcp-puppet",
+  "dependencies":[
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 1.0.0"
+    },
+    {
+      "name": "puppetlabs/concat",
+      "version_requirement": ">= 4.2.1"
+    }
+  ]
+}
