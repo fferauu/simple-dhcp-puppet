@@ -20,5 +20,5 @@ define dhcp::subnet (
       dns         => $dns,
     }),
     order   => '01',
- }
+  }
 }

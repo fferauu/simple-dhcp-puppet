@@ -8,7 +8,7 @@ dhcp::subnet { '192.168.10.0' :
   broadcast   => '192.168.10.255',
 }
 
-dhcp::host { 'example.com' :
+dhcp::host { 'example' :
   ip  => '192.168.10.75',
-  mac => 'ab:ab:ab:ab:ab:ab',
+  mac => '11:11:11:11:11:11',
 }

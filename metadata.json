@@ -1,6 +1,6 @@
 {
-  "name": "simple-dhcp",
-  "version": "0.1.0",
+  "name": "fferauu-dhcp",
+  "version": "0.1.1",
   "author": "Michał Kacprzak",
   "summary": "Simple Puppet module to mantain DHCP",
   "license": "Apache-2.0",
@@ -14,6 +14,16 @@
     {
       "name": "puppetlabs/concat",
       "version_requirement": ">= 4.2.1"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": "7"
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [ "14.04", "16.04" ]
     }
   ]
 }

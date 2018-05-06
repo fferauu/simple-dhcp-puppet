@@ -1,6 +1,6 @@
 class dhcp::service (
   $service_name = $dhcp::params::service
-) inherits dhcp::params{
+) inherits dhcp::params {
 
   service { 'dhcp_service':
     ensure  => 'running',
@@ -9,4 +9,3 @@ class dhcp::service (
     require => Class['dhcp::install'],
   }
 }
-

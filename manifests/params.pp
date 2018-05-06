@@ -1,5 +1,5 @@
 class dhcp::params {
-  case $facts['os']['family'] {  
+  case $facts['os']['family'] {
     'RedHat' : {
       $service = 'dhcpd'
       $package = 'dhcp'
@@ -9,7 +9,7 @@ class dhcp::params {
       $package = 'isc-dhcp-server'
     }
     default : {
-      fail("Your OS is not supported")
+      fail('Your OS is not supported')
     }
   }
 }
