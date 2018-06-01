@@ -10,7 +10,7 @@ My first Puppet module. With this module you can make basic DHCP configuration.
 ## Usage
 
 include dhcp
-
+```puppet
 dhcp::subnet { '192.168.10.0' :
   netmask     => '255.255.255.0',
    begin_range => '192.168.10.25',
@@ -23,3 +23,4 @@ dhcp::host { 'example' :
   ip  => '192.168.10.75',
   mac => '11:11:11:11:11:11',
 }
+```

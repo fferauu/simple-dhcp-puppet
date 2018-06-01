@@ -1,6 +1,6 @@
 define dhcp::host (
-  $ip,
-  $mac,
+  Stdlib::IP::Address::V4 $ip,
+  Stdlib::MAC            $mac,
 ) {
 
   concat::fragment { $title :

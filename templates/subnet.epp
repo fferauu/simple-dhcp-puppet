@@ -1,7 +1,12 @@
 subnet <%= $subnet %> netmask <%= $netmask %> {
+  default-lease-time <%= $default_lease_time %>;
+  max-lease-time <%= $max_lease_time %>;
   range <%= $begin_range %> <%= $end_range %>;
   option routers <%= $router %>;
   option broadcast-address <%= $broadcast %>;
   option domain-name-servers <%= $dns[0] %>, <%= $dns[1] %>; 
+<% if $domain { -%>
+  option domain-search <%= $domain %>;
+<% } -%>
 }
 <% %>
